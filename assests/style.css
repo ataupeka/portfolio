@@ -422,6 +422,7 @@ position: relative;
 .info__item{
     display: flex;
     align-items: center;
+    color: var(--title-color);
   
 }
 .info-icon{
@@ -432,8 +433,8 @@ position: relative;
 }
 .info__subtitle{
     font-size: var(--smaller-font-size);
+    color: var(--title-color);
 }
-
 
 
 /*===== Buttons =====*/
@@ -874,12 +875,116 @@ color: var(--skin-color);
     }
 }
 /* For Medium Devices */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 576px) {}
 
-/* For Small Devices */
-@media screen and (max-width: 350px) {}
+    .about__img {
+        width: 250px;
+    }
+
+    .work__container{
+        grid-template-columns: 330px;
+    }
+
+    .contact__container{
+        grid-template-columns: 360px;
+        row-gap: 3rem;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
+        justify-content: center;
+    }
+
+    .footer__socials {
+       justify-self: start;
+    }
+
+
+    .footer__links {
+        flex-direction: column;
+        
+    }
+
+    .footer__bg {
+        padding: 2rem 0 3rem;
+    }
+    .portfolio__popup-inner {
+        width: 420px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    }
+
+    .portfolio__popup-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6 rem;
+    }
+
+    .portfolio__popup-close {
+       top: .5rem; 
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .nav__toggle {
+        right: initial;
+        left: 1.5rem;
+    }
+
+    .home {
+        height: initial;
+        align-items: initial;
+        padding: 7rem 0 2 rem;
+    }
+  .home__container {
+    row-gap: 2rem;
+  }
+    .home__img {
+        display: block;
+        width: 250px;
+        justify-content: center;
+    }
+
+
+    .hopme_social {
+        left: initial;
+        right: -1rem;
+        flex-direction: column;
+        row-gap: 3.5 rem;
+    }
+
+    .home__social-follow {
+        font-size: var(--smaller-font-size);
+        transform: rotate(90deg);
+    }
+
+
+    .home__social-links {
+        flex-direction: column;
+        row-gap: .25rem;
+    }
+
+    .home__social-link {
+        font-size: var(--normal-font-size);
+    }
+
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about__description {
+        padding: 0;
+    }
+
+   .work__container {
+        grid-template-columns: 300px;
+    }
+
+    .my__info {
+        display: none;
+    }
+}
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {}
