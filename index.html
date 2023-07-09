@@ -20,7 +20,10 @@
 <body>
 
 <!-------sidebar---------->
- <aside class="sidebar"  id="sidebar">
+<div class="nav__toggle" id="nav-toggle">
+<i class="uil uil-bars"></i>
+</div>
+ <aside class="sidebar"  id="sidebar"> 
 <nav class="nav">
 <div class="nav__logo">
 <a href="index.html" class="nav__logo-text"> A </a> </div>
@@ -39,11 +42,9 @@
                 <a href="#skills" class="nav__link"> Skills</a>
             </li>
             <li class="nav__item">
-                <a href="#work" class="nav__link"> Work </a>
+                <a href="#work" class="nav__link"> Portfolio</a>
             </li>
-            <li class="nav__item">
-                <a href="#services" class="nav__link"> Services</a>
-            </li>
+          
             <li class="nav__item">
                 <a href="#contact" class="nav__link"> Contact </a>
             </li>
@@ -62,8 +63,16 @@
 </div>
 
 
+<div class="nav__close" id="nav-close">
+ <i class="uil uil-times"></i>
+</div>
+
 </nav>
  </aside>
+
+
+
+
 
 <!-------main---------->
  <main class="main">
@@ -79,7 +88,7 @@
 <div class="home__social">
 <span class="home__social-follow"> Follow me</span> 
 <div class="home__social-links">
-<a href="https://www.linkedin.com/in/ala-taupeka-778b23161/" target="_blank" class="home__social-link"> <i class="uil uil-linkedin"> </i></a>
+<!---<a href="https://www.linkedin.com/in/ala-taupeka-778b23161/" target="_blank" class="home__social-link"> <i class="uil uil-linkedin"> </i></a> -->
 <a href="https://github.com/ataupeka" target="_blank" class="home__social-link"> <i class="uil uil-github"> </i></a>
 </div>
 </div>
@@ -94,7 +103,7 @@
 <a href="#about" class="button"> <i class="uil uil-user button_icon"> </i> More About Me </a>
 </div>
 <div class="home__img">  
-<img src="./assests/images/image1.jpg" alt="" class=""> </div>
+<img class="img__home" src="./assets/images/image1.jpg" alt="" class=""> </div>
 </div>
 </div>
 
@@ -177,8 +186,110 @@
 </section>
 
 
+<!-------Portfolio---------->
+<section class="work section" id="work">
+
+<h2 data-heading="My Portfolio" class="section__title" > My Portfolio </h2>
 
 
+<div class="work__filters">
+<span class="work__item active-work">  All</span>
+<span class="work__item">  Web</span>
+<span class="work__item">  App</span>
+
+
+</div>
+
+<div class="work__container container grid">
+<div class="work__card">
+<img src="./assets/images/project1.jpg" class="work__img" alt="">
+<h3 class="work__title"> Grocery List </h3>
+<span class="work_button"> Go to project
+<i class="uil uil-arrow-right work__button-icon"></i>
+</span>
+<div class="portfolio__item-details">
+    <h3 class="details_title"></h3>
+    <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <ul class="details__info">
+        <li> Technologies -<span> HTML CSS REACT</span></li>
+       
+
+
+    </ul>
+
+
+</div>
+
+</div>
+
+<div class="work__card">
+    <img src="./assets/images/project1.jpg" class="work__img" alt="">
+    <h3 class="work__title"> Grocery List </h3>
+    <span class="work_button"> Go to project
+    <i class="uil uil-arrow-right work__button-icon"></i>
+    </span>
+    <div class="portfolio__item-details">
+        <h3 class="details_title"></h3>
+        <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <ul class="details__info">
+            <li> Technologies -<span> HTML CSS REACT</span></li>
+           
+    
+    
+        </ul>
+    
+    
+    </div>
+    
+    </div>
+
+    <div class="work__card">
+        <img src="./assets/images/project1.jpg" class="work__img" alt="">
+        <h3 class="work__title"> Grocery List </h3>
+        <span class="work_button"> Go to project
+        <i class="uil uil-arrow-right work__button-icon"></i>
+        </span>
+        <div class="portfolio__item-details">
+            <h3 class="details_title"></h3>
+            <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <ul class="details__info">
+                <li> Technologies -<span> HTML CSS REACT</span></li>
+               
+        
+        
+            </ul>
+        
+        
+        </div>
+        
+        </div>
+        <div class="work__card">
+            <img src="./assets/images/project1.jpg" class="work__img" alt="">
+            <h3 class="work__title"> Grocery List </h3>
+            <span class="work_button"> Go to project
+            <i class="uil uil-arrow-right work__button-icon"></i>
+            </span>
+            <div class="portfolio__item-details">
+                <h3 class="details_title"></h3>
+                <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <ul class="details__info">
+                    <li> Technologies -<span> HTML CSS REACT</span></li>
+                   
+            
+            
+                </ul>
+            
+            
+            </div>
+            
+            </div>
+
+
+
+</div>
+
+
+</section>
 <!-------Contact---------->
 <section class="contact section" id="contact">
 <h2 data-heading="Get in touch" class="section__title"> Contact Me</h2>
@@ -247,15 +358,20 @@
 </section>
 
 
+
+
+
+
  <!-------Footer--------->
 <footer class="footer">
 
     <div class="footer__bg">
         <div class="footer__container container grid">
-<div>
-    <h1 class="footer__title"> Ala Taupeka
+<div class="footer__div">
+ 
+<h1 class="footer__title"> Ala Taupeka </h1>
 <span class="footer__subtitle">Frontend developer</span>
-    </h1>
+   
 </div>
 
 
@@ -281,8 +397,6 @@
     </div>
 </footer>
 </main>
-
-
 <!-------Scroll up------->
 
 
